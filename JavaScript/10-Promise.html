@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    let p1 = new Promise((resolve , reject) => {
+        console.log("Promise 1 is callled");
+        setTimeout(()=>{
+            resolve(50);
+        },3000)
+    })
+
+    // if the promise is reolve then it directed to the .then() 
+    // if it get rejected then it directed to the .catch() 
+
+    p1.then((value)=>{
+        console.log("Promise 1 is resolved");
+    })
+
+    p1.catch((error)=>{
+        console.log("Promise 1 got rejected and get error " , error);
+    })
+
+    let p2 = new Promise((resolve , reject) => {
+        console.log("Promise 2 is callled");
+        setTimeout(()=>{
+            reject(new Error("error"))
+        },3000)
+    })
+
+    p2.then((value)=>{
+        console.log("Promise 2 is resolved");
+    })
+
+    p2.catch((error)=>{
+        console.log("Promise 2 got rejected and get error ");
+    })
+</script>
+
+</body>
+</html>

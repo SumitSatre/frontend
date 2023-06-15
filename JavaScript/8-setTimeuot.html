@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #para{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam itaque sunt, adipisci quaerat eligendi sint. Blanditiis eos repellendus voluptatibus facere dolorem provident praesentium architecto vel! Adipisci excepturi assumenda magni non. Aperiam, itaque dolorem hic accusamus minima soluta amet adipisci id atque omnis perferendis voluptatibus cumque eligendi qui dolores quaerat veniam?
+    </p>
+    <button onclick="toggle()">Show/Hide</button>
+
+    <script>
+        let p = document.getElementById("para");
+
+        function toggle(){
+            if(p.style.display != "none"){
+                p.style.display = "none";
+            }
+            else{
+                p.style.display = "block";
+            }
+        }
+        
+        let timeout = setTimeout(set , 3000);
+        
+        function set(){
+            p.style.display = "block";
+        }
+
+        clearTimeout(timeout);
+    </script>
+</body>
+</html>

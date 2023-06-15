@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        My name is Sumit
+    </p>
+
+    <script>
+        let name = "My name is Sumit";
+
+        let position ;
+
+        position = name.indexOf("name");
+        console.log(position);
+
+        position = name.lastIndexOf("name");
+        console.log(position);
+
+        // All three are same 
+        position = name.slice(1,4);
+        position = name.substring(1,4);
+        position = name.substr(1,4);
+        console.log(position);
+
+        let replaced = name.replace("Sumit" , "tejas");
+        console.log(replaced);
+
+        console.log( name.toUpperCase() );
+        console.log( name.toLowerCase() );
+    </script>
+</body>
+</html>

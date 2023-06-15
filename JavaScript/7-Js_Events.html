@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #btn{
+            background-color: rgb(91, 179, 43);
+            color: white;
+            padding: 10px 12px;
+            border-radius: 12px;
+            display: block;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        My Website
+    </h1>
+
+    <p id="para" onmouseover="down()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sint placeat odit quaerat ducimus quod dolor corrupti illo eos quis impedit repellat laboriosam officiis, quasi quidem aliquid. Molestias, reiciendis ipsum. Quos nobis sint accusamus deleniti cupiditate quod excepturi harum asperiores vero, placeat, aperiam libero pariatur neque, mollitia laboriosam officia maxime incidunt minima. Consectetur consequuntur quisquam suscipit est ratione, distinctio laboriosam nulla corporis eius enim, eveniet dignissimos quas ex odio quaerat. Nemo architecto quod non explicabo nulla possimus omnis, distinctio quia ullam ipsa esse cum tempore quae dolor ducimus vero quo dolorum harum officiis rerum ut perspiciatis velit laudantium? Recusandae, tenetur vero illum officia veniam quisquam praesentium nobis, voluptatem quo cupiditate eius necessitatibus repellat saepe hic impedit. Impedit doloremque natus error itaque facilis sed accusamus quam? Ut voluptas ipsam fugit earum odit modi quos cumque, ullam, id facere voluptate accusamus vitae facilis quisquam! Rem laudantium tenetur placeat iusto ad exercitationem corrupti pariatur, sunt vero aperiam cumque, accusantium error. Aperiam voluptas sapiente velit sint architecto dolore alias nihil explicabo saepe in odio debitis ex, vel itaque corporis soluta sunt nostrum nulla porro molestias iusto laboriosam, facere beatae atque? Voluptatum, quam veniam libero ipsam non dolor iure itaque, assumenda, eius modi est velit.
+    </p>
+
+    <button id="btn" onclick="toggle()">Show/Hide</button>
+
+    <script>
+        function toggle(){
+            let para = document.getElementById("para");
+
+            if(para.style.display != 'none'){
+                para.style.display = "none";
+            }
+            else{
+                para.style.display = "block";
+            }
+        }
+
+
+        para.addEventListener('mousedown' , down());
+
+        para.addEventListener('mouseup' , up());
+
+        function down(){
+            alert("Mouse is Down");
+        }
+
+        function up(){
+            alert("Mouse is Up");
+        }
+    </script>
+</body>
+</html>

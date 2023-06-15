@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z index</title>
+
+    <style>
+        /*
+        visibility: hidden;
+	        It hides the element but reserve the space for the element at that place.
+
+        display: none;
+	        It removes the element from the screen.
+
+        z-index : It only works for the position : relative , absolute , fixed or stiky. 
+*/
+        .box{
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        #box1{
+            /* visibility: hidden; */
+            background-color: yellow;
+            position: relative ;
+            top: 50px;
+            z-index: 1;
+        }
+        #box2{
+            background-color: red;
+            position: relative ;
+            top: 14px;
+            z-index: -1;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            /* display: none; */
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">My name is sumit</div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

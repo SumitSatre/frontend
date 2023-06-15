@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .item{
+            height: 200px ;
+            width: 300px;
+            border: 2px solid black;
+            margin: 20px;
+            font-size: 40px;
+
+             box-shadow: 10px 15px  green;                      /* (y , x) */
+             box-shadow: -10px -15px green;                     /*  ( -y , -x) */
+             box-shadow: 10px 15px 5px rgb(83, 198, 83);        /* (3rd wala blur radius) */
+             box-shadow: 10px -15px 5px 10px rgb(83, 198, 83);   /* (4rd wala kiti dark thewaych) */
+
+             box-shadow: inset 5px 10px orange;             /* Inside the box */ 
+
+        }
+
+        .item p{
+            text-shadow: 5px 3px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color: red;">
+            <p> My name is Sumit </p>
+        </div>
+        <div class="item" style="background-color: yellow;">
+            <p> My name is Sumit </p>
+        </div>
+        <div class="item" style="background-color: pink;">
+            <p> My name is Sumit </p>
+        </div>
+    </div>
+    
+</body>
+</html>

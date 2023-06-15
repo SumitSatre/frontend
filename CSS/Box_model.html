@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: cyan;
+        }
+        .container{
+            background-color: rgb(88, 130, 213);
+            border: 2px solid black;
+            padding: 30px; 
+            margin: 50px;
+        }
+
+        .container2{
+            background-color: rgb(88, 130, 213);
+            border: 2px solid black;
+            padding: 30px 5px 25px 100px;  /* padding / margin : top right bottom left */
+            margin: 50px;
+        }
+
+        .container3{
+            width: 400px;
+            background-color: rgb(88, 130, 213);
+            border: 2px solid black;
+            padding: 23px  50px;  /* padding : y(top/bottom) x(left/right); */
+            margin: 50px;
+            margin-left: 500px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Margin and padding</h1>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+        </p>
+    </div>
+
+
+    <div class="container2">
+        <h3>This is my heading</h3>
+        <p id="second">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+        </p>
+    </div>
+
+    <div class="container3">
+        <h3>This is my heading</h3>
+        <p id="third">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis non odio cum dicta itaque ad quo saepe culpa, eos possimus sunt nisi dolore eius, magnam, id facilis nemo voluptatem!
+        </p>
+    </div>
+</body>
+</html>

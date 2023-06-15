@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*
+        static : HTML elements are positioned static by default.
+        Relative : Relative to its normal position
+        absolute :  Relative to its parent position
+        fixed : fixed on that position
+
+        */
+        .box{
+            border: 2px solid red;
+            border-radius: 5px;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+
+        #box1{
+            height: 2000px;
+        }
+
+        #box2{
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id = "box1">1</div>
+    <div class="box" id = "box2">2</div>
+    <div class="box" id = "box3">3</div>
+    <div class="box" id = "box4">4</div>
+</body>
+</html>
